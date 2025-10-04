@@ -119,7 +119,7 @@ body {
   background-color:  #fafad5;
 }
 .logo-hero {
-  max-width: 200px; /* 🔹 Tamaño máximo que tendrá en escritorio */
+  max-width: 350px; /* 🔹 Tamaño máximo que tendrá en escritorio */
   width: 100%;      /* 🔹 En móvil, ocupará el 100% del contenedor (siempre menos de 200px) */
   height: auto;
 }
