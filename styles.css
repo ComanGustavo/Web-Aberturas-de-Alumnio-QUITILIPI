@@ -123,7 +123,11 @@ body {
   width: 100%;      /* 🔹 En móvil, ocupará el 100% del contenedor (siempre menos de 200px) */
   height: auto;
 }
-
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+  width:100%
+}
 
 
 
@@ -145,22 +149,18 @@ header {
   position: relative;
 }
 
-.logo-container {
-  text-align: center;
-  margin-bottom: 10px;
-  width:100%
-}
+
 
 /*.logo {
   width: 100px;
   height: auto;
   border-radius: 8px;
 } */
- .logo {
+ /*.logo {
   max-width: 200px;
   width: 100%;
   height: auto;
-}
+}*/
 
 
 /* Menú de navegación */
