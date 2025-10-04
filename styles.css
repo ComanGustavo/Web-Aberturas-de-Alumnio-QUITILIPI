@@ -15,16 +15,17 @@
         padding: 10px;
         margin: 0;
     }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    } 
+     } 
     /* AÑADE ESTO: Hace el texto blanco para el contraste */
     nav ul li a {
         color: white; 
     }
 
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+   
     .menu-toggle {
         display: block;
     }
