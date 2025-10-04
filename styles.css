@@ -8,6 +8,7 @@
 }
 
 @media (max-width: 768px) {
+    /* Regla para el UL (Contenedor del menú) */
     nav ul {
         flex-direction: column;
         display: none;
@@ -15,16 +16,18 @@
         padding: 10px;
         margin: 0;
     }
-     } 
-    /* AÑADE ESTO: Hace el texto blanco para el contraste */
-    nav ul li a {
-        color: white; 
-    }
-
-
+    
+    /* Regla para los LI (Elementos de la lista) */
     nav ul li {
         margin: 10px 0;
         text-align: center;
+    }
+    
+    /* Regla para los ENLACES (El texto) - ¡ESTO ES LO NUEVO Y CORRECTO! */
+    nav ul li a { 
+        color: white; /* **SOLUCIÓN: Texto blanco sobre fondo oscuro** */
+    }
+
    
     .menu-toggle {
         display: block;
