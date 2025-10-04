@@ -6,37 +6,42 @@
     text-align: right;
     padding: 10px 20px;
 }
-
 @media (max-width: 768px) {
-    /* Regla para el UL (Contenedor del menú) */
+    
+    /* REGLA CRUCIAL: Oculta el menú por defecto y pone el fondo azul */
     nav ul {
         flex-direction: column;
-        display: none;
+        /* FORZAMOS LA OCULTACIÓN: La banda azul debe desaparecer */
+        display: none !important; 
         background-color: #003366;
         padding: 10px;
         margin: 0;
+        width: 100%; /* Aseguramos que ocupe todo el ancho */
     }
     
-    /* Regla para los LI (Elementos de la lista) */
+    /* SOLUCIÓN AL CONTRASTE: Pone el texto de los enlaces en blanco */
+    nav ul li a { 
+        color: white; 
+    }
+
+    /* Hace que los ítems se centren y tengan espacio */
     nav ul li {
         margin: 10px 0;
         text-align: center;
     }
-    
-    /* Regla para los ENLACES (El texto) - ¡ESTO ES LO NUEVO Y CORRECTO! */
-    nav ul li a { 
-        color: white; /* **SOLUCIÓN: Texto blanco sobre fondo oscuro** */
-    }
 
-   
+    /* Muestra el botón de hamburguesa (el ☰) */
     .menu-toggle {
-        display: block;
+        display: block; 
     }
 
+    /* Muestra el menú cuando el JavaScript añade la clase 'active' */
     nav ul.active {
-        display: flex;
+        display: flex !important; /* FORZAMOS LA VISIBILIDAD al hacer clic */
     }
 }
+
+
 /*.galeria img {
   width: 100%;
   max-width: 150px;
