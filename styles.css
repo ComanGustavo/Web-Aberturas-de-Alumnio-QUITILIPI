@@ -40,28 +40,27 @@
 .galeria {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
   background-color: #fff9dc;
-  padding: 30px;
-  box-sizing: border-box;
 }
 
 .galeria img {
   width: 100%;
-  max-width: 220px;
-  height: 280px;
+  max-width: 260px;
+  height: 340px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  background-color: #fff;
-   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 
 }
 
 .galeria img:hover {
-  transform: scale(1.07);
+  transform: scale(1.05);
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
@@ -69,17 +68,18 @@
 @media (max-width: 768px) {
   .galeria img {
     max-width: 45%;
-    height: 220px;
+    height: 300px;
   
   }
 }
 
 @media (max-width: 480px) {
   .galeria img {
-    max-width: 90%;
-    height: 240px;
+    max-width: 80%;
+    height: 320px; 
   }
 }
+
 
 /* ========== SLIDER "QUIÉNES SOMOS" ========== */
 .slider-quienes {
