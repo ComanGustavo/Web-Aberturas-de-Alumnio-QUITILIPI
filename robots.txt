@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://comangustavo.github.io/Web-Aberturas-de-Alumnio-QUITILIPI/
